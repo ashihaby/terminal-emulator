@@ -12,11 +12,10 @@ Installation
 ============
 
     npm install
-    npm install ssh2
 
  You should edit config.js file before running the server.
  After that you can run server script
 
-   node server.js
+     node server.js
 
  

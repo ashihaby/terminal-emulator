@@ -3,6 +3,7 @@
         "version": "0.0.0",
         "dependencies": {
                 "express": "2.x",
-                "sockjs": "*"
+                "sockjs": "*",
+                "ssh2" : "*", 
         }
 }
