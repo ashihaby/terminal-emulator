@@ -4,12 +4,12 @@ config = {
 		port: 9998
 	},
 	ssh: {
-		host: "192.168.1.2",
-		port: 56568,
-		username: "ubuntu",
-		password: "r8zB3SUQ",
-		privateKey: '',                      //path of privateKey
-		publicKey: ''                        //path of privateKey
+		host: "localhost",                   //required
+		port: 22,                            //required
+		username: "",                        //required
+		password: "",                        //required 
+		privateKey: '',                      //[optional] path of privateKey
+		publicKey: ''                        //[optional] path of privateKey
 	}
 
 }

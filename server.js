@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 var fs                  = require('fs')
   , express             = require('express')
   , sockjs              = require('sockjs')

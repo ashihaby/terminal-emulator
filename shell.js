@@ -1,6 +1,6 @@
-var Connection          = require('ssh2')
-, inherits = require('util').inherits
-, EventEmitter = require('events').EventEmitter;
+var Connection    = require('ssh2')
+  , inherits      = require('util').inherits
+  , EventEmitter  = require('events').EventEmitter;
 
 
 var ssh = new Connection();
