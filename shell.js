@@ -5,6 +5,7 @@ var Connection    = require('ssh2')
 
 var ssh = new Connection();
 ssh.on('connect', function() {
+	shell.is_connected = true;
 	console.log('Connection :: connect');
 });
 ssh.on('ready', function() {
@@ -26,6 +27,7 @@ function Shell () {
 	self = this;
 	this._stream = undefined;
 	self._term = process.env.TERM || 'xterm';
+	self.is_connected = false;
 	this.connect = function(config) {
 		ssh.connect({
 			host: config.ssh.host,

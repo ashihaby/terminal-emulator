@@ -11,11 +11,16 @@ var fs                  = require('fs')
 var service = sockjs.createServer();
 
 service.on('connection', function(conn) {
-  shell.connect(config);
+  if (!shell.is_connected) {
+      shell.connect(config);
+  } else {
+    shell.start();
+  }
   shell.on('data', function(data) {
         conn.write(data);
   });
   conn.on('data', function(data) {
+   console.log('message ' + conn, data);
    var data = data;
    shell.emit('cmd', data);
  });
