@@ -4,6 +4,6 @@
         "dependencies": {
                 "express": "2.x",
                 "sockjs": "*",
-                "ssh2" : "*", 
+                "ssh2" : "*"
         }
 }
