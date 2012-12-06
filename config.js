@@ -6,8 +6,8 @@ config = {
 	ssh: {
 		host: "localhost",                   //required
 		port: 22,                            //required
-		username: "ashihaby",                        //required
-		password: "c9cloud9ers",                        //required 
+		username: "",                        //required
+		password: "",                        //required 
 		privateKey: '',                      //[optional] path of privateKey
 		publicKey: ''                        //[optional] path of privateKey
 	}
